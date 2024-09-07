@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:src="@drawable/earthquake_item_page"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_300dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20dp">
+
+            <TextView
+                android:textSize="@dimen/_24sp"
+                android:text="@string/title"
+                android:layout_gravity="bottom"
+                android:textColor="@android:color/holo_green_dark"
+                android:textStyle="bold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3" />
+
+            <ImageView
+                android:id="@+id/ivRead"
+                tools:src="@drawable/red_flag"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <TextView
+            android:textSize="@dimen/_24sp"
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="@string/interesting_title" />
+
+        <TextView
+            android:textSize="@dimen/_24sp"
+            android:text="@string/magnitude"
+            android:textColor="@android:color/holo_green_dark"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textSize="@dimen/_24sp"
+            android:id="@+id/tvMagnitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="@string/giant_magnitude" />
+
+        <TextView
+            android:textSize="@dimen/_24sp"
+            android:text="@string/location"
+            android:textColor="@android:color/holo_green_dark"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textSize="@dimen/_24sp"
+            android:id="@+id/tvPlace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="@string/this_is_where_it_happened" />
+
+    </LinearLayout>
+</ScrollView>
